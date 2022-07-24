@@ -1,0 +1,93 @@
+.home{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.home .container{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: rgb(227, 227, 227);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-auto-rows: 10px;
+    justify-content: center;
+}
+.home .container .pin{
+    position: relative;
+    margin: 15px 10px;
+    background: rgb(142, 142, 142);
+    border-radius: 16px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.home .container .pin img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .container .pin:hover .extra{
+    display: flex;
+}
+.home .container .small{
+    grid-row-end: span 26;
+}
+.home .container .medium{
+    grid-row-end: span 33;
+}
+.home .container .large{
+    grid-row-end: span 45;
+}
+.home .container .pin .extra{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.193);
+    border-radius: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.home .container .pin .extra .up{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.home .container .pin .extra .up button{
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #e60023;
+    cursor: pointer;
+}
+.home .container .pin .extra .down{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.home .container .pin .extra .down i{
+    padding: 6px 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 6px;
+}
+.seenall{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+    padding: 20px 0;
+    align-items: center;
+}
